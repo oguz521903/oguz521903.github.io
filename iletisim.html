@@ -1,13 +1,42 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Beşiktaş Jimnastik   Kulübü</title>
     <link rel="stylesheet" href="style.css">
-  
+  <meta charset="UTF-8">
+  <title>İletişim Sayfası</title>
+  <style>
+    /* Basit bir CSS iletişim formu için */
+    .container {
+      width: 50%;
+      margin: 50px auto;
+      font-family: Arial, sans-serif;
+    }
+    input[type="text"],
+    input[type="email"],
+    textarea,
+    input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+    textarea {
+      height: 100px;
+    }
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
 </head>
 <body>
-    
     <link rel="stylesheet" href="haberler.html">
     <link rel="stylesheet" href="muze.html">
     
@@ -62,57 +91,31 @@
             </ul>
         </nav>
     </header>
-    
-    
-    <div class="ust-resim">
-    
-        <a href="haberler.html">
-        <img src="resimler/bjkbaskan .png" alt="Üstteki Resim" width="1350" height="600"  >
-        </a>
 
-    
-    </div> 
-        <div class="ana-div">
+<div class="container">
+  <h2>İletişim Formu</h2>
+  <form action="iletisim.php" method="post">
+    <label for="name">Adınız:</label>
+    <input type="text" id="name" name="name" placeholder="Adınızı girin" required>
 
-            <a href="https://www.kartalyuvasi.com.tr/forma-lp">
-            <img src="resimler/bjkforma.png" alt="Alt Resim" width="850" height="500" class="forma">
-        </a>
-        
-    
+    <label for="email">E-posta:</label>
+    <input type="email" id="email" name="email" placeholder="E-posta adresinizi girin" required>
 
-    
-        <a href="">
-        <img src="resimler/atabjk.jpg" alt="Alt Resim" width="200" height="300" class="birakmambjk">
-    </a>
-    </div>
+    <label for="message">Mesajınız:</label>
+    <textarea id="message" name="message" placeholder="Mesajınızı girin" required></textarea>
 
-    <img src="resimler/bırakmambjk.jpg" alt="" width="200px" height="450px">
-    <a href="https://www.kartalyuvasi.com.tr/">
-    <img src="resimler/abouforma.jpg" alt="" width="300px" height="450px">
-    </a>
-    <img src="resimler/bjkdergi.jpg" alt="" width="250px" height="450px">
-<a href="https://beinsports.com.tr/haber/fenerbahce-besiktas-13">
-    <img src="resimler/bjkfb.jpg" alt="" width="580px" height="450px">
-</a>   
-    <main>                  
-    </main>
-    <footer>
-        <p>&copy; 2023 Beşiktaş Tüm Hakları Saklıdır.</p>
-    </footer>
+    <input type="submit" value="Gönder">
+  </form>
+</div>
+
+<h1 class="yazi1">Beşiktaşımıza destek olmak için iletişime geç</h1>
 
 
-
-    
-    
-    
-
-   
-    
-
-
+<main>                  
+</main>
+<footer>
+    <p>&copy; 2023 Beşiktaş Tüm Hakları Saklıdır.</p>
+</footer>
 
 </body>
 </html>
-
-
-
